@@ -1,0 +1,10 @@
+== Deep learning: PyTorch MLP ==
+architecture: 784 -> 128 (ReLU) -> 10, 101770 parameters
+train: first 10000 Fashion-MNIST train images, test: first 2000 t10k images
+SGD: batch=64, lr=0.2, epochs=3
+
+epoch 1  train_loss=0.9156  test_acc=0.7080
+epoch 2  train_loss=0.5998  test_acc=0.6985
+epoch 3  train_loss=0.5296  test_acc=0.7875
+
+final test accuracy: 0.7875

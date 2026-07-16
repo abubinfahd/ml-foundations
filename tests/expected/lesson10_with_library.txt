@@ -1,0 +1,23 @@
+== PCA: with scikit-learn ==
+rows: 1599, features: 11 (quality excluded), standardized
+
+    PC  eigenvalue  explained  cumulative
+   PC1      3.1011     0.2817      0.2817
+   PC2      1.9271     0.1751      0.4568
+   PC3      1.5515     0.1410      0.5978
+   PC4      1.2140     0.1103      0.7081
+   PC5      0.9599     0.0872      0.7953
+   PC6      0.6600     0.0600      0.8552
+   PC7      0.5842     0.0531      0.9083
+   PC8      0.4232     0.0385      0.9468
+   PC9      0.3449     0.0313      0.9781
+  PC10      0.1814     0.0165      0.9946
+  PC11      0.0596     0.0054      1.0000
+
+PC1 top-3 loadings by |value|: fixed acidity +0.4893, citric acid +0.4636, pH -0.4385
+PC2 top-3 loadings by |value|: total sulfur dioxide +0.5695, free sulfur dioxide +0.5136, alcohol -0.3862
+
+projection of the first 3 samples onto (PC1, PC2):
+  sample 1: (-1.6195, +0.4510)
+  sample 2: (-0.7992, +1.8566)
+  sample 3: (-0.7485, +0.8820)

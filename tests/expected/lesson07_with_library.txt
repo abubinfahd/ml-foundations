@@ -1,0 +1,21 @@
+== Decision tree (CART): with scikit-learn ==
+rows in file: 150
+train/test split: 120/30 (seed 42)
+classes (count order): Iris-setosa, Iris-versicolor, Iris-virginica
+
+|--- petal_length <= 2.4500
+|   |--- class: Iris-setosa
+|--- petal_length >  2.4500
+|   |--- petal_width <= 1.6500
+|   |   |--- petal_length <= 4.9500
+|   |   |   |--- class: Iris-versicolor
+|   |   |--- petal_length >  4.9500
+|   |   |   |--- class: Iris-virginica
+|   |--- petal_width >  1.6500
+|   |   |--- petal_length <= 4.8500
+|   |   |   |--- class: Iris-virginica
+|   |   |--- petal_length >  4.8500
+|   |   |   |--- class: Iris-virginica
+
+train accuracy: 0.9833
+test accuracy:  0.9667

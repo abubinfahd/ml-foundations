@@ -1,0 +1,15 @@
+== k-means clustering: with scikit-learn ==
+rows used: 333 (rows with missing values dropped)
+features (standardized): bill_length_mm, bill_depth_mm, flipper_length_mm, body_mass_g
+
+KMeans(n_clusters=3, n_init=10, random_state=42):
+inertia: 370.7661
+cluster sizes (largest first): 129, 119, 85
+
+cluster x species contingency (clusters sorted by size):
+                 Adelie  Chinstrap     Gentoo
+  cluster 1         124          5          0
+  cluster 2           0          0        119
+  cluster 3          22         63          0
+
+adjusted Rand index (clusters vs species): 0.7994

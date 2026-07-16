@@ -1,0 +1,18 @@
+== Logistic regression: with scikit-learn ==
+rows: 891  train: 712  test: 179
+train median Age used for imputation: 28.0000
+
+-- LogisticRegression(C=1e9), effectively unregularized --
+term             coef
+intercept     -0.6613
+Pclass        -0.9829
+Sex           -1.3635
+Age           -0.6395
+SibSp         -0.4882
+Parch         -0.0713
+Fare           0.1161
+
+train accuracy: 0.8076  train log-loss: 0.4311
+test  accuracy: 0.7430  test  log-loss: 0.4950
+
+default LogisticRegression (C=1.0) test accuracy: 0.7430

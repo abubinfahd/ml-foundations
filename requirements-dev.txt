@@ -1,0 +1,5 @@
+# Extra dependencies for running the test suite (tests/). Not needed to work
+# through the lessons themselves — see requirements.txt for that.
+-r requirements.txt
+pytest==9.1.1
+

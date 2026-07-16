@@ -1,0 +1,16 @@
+# Pinned environment for ml-foundations (Linux, CPU-only).
+# Install into a fresh venv:
+#   python3 -m venv .venv
+#   source .venv/bin/activate
+#   pip install -r requirements.txt
+#
+# The extra index serves CPU-only PyTorch wheels (no multi-GB CUDA download).
+--extra-index-url https://download.pytorch.org/whl/cpu
+
+numpy==2.5.1
+pandas==3.0.3
+scipy==1.18.0
+scikit-learn==1.9.0
+statsmodels==0.14.6
+matplotlib==3.11.0
+torch==2.13.0+cpu

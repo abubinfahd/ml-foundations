@@ -1,0 +1,36 @@
+== Probability & distributions: from scratch ==
+
+-- Law of large numbers: fair coin, true P(heads) = 0.5 --
+       n  prop(heads)  |prop - 0.5|
+      10       0.4000        0.1000
+     100       0.5200        0.0200
+    1000       0.5090        0.0090
+   10000       0.4939        0.0061
+  100000       0.5009        0.0009
+
+-- Binomial(n=10, p=0.3) pmf: formula vs 100000 simulated draws --
+  k    formula  simulated
+  0     0.0282     0.0285
+  1     0.1211     0.1199
+  2     0.2335     0.2329
+  3     0.2668     0.2679
+  4     0.2001     0.2006
+  5     0.1029     0.1021
+  6     0.0368     0.0372
+  7     0.0090     0.0091
+  8     0.0014     0.0014
+  9     0.0001     0.0001
+ 10     0.0000     0.0000
+
+-- Standard normal pdf --
+  x     pdf(x)
+ -2     0.0540
+ -1     0.2420
+  0     0.3989
+  1     0.2420
+  2     0.0540
+
+-- Central limit theorem: 10000 means of n=30 draws, Exponential(rate=1) --
+                        observed  CLT prediction
+mean of sample means      0.9984          1.0000
+std  of sample means      0.1825          0.1826

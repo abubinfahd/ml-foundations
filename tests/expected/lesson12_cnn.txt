@@ -1,0 +1,11 @@
+== Deep learning: PyTorch CNN ==
+architecture: conv 1->8 (3x3) + pool -> conv 8->16 (3x3) + pool -> linear 784 -> 10
+parameters: CNN 9098 vs MLP 101770
+train: first 10000 Fashion-MNIST train images, test: first 2000 t10k images
+SGD: batch=64, lr=0.25, epochs=3
+
+epoch 1  train_loss=1.3551  test_acc=0.5910
+epoch 2  train_loss=0.6491  test_acc=0.7075
+epoch 3  train_loss=0.5290  test_acc=0.8095
+
+final test accuracy: 0.8095

@@ -1,0 +1,30 @@
+== Probability & distributions: with scipy ==
+
+-- Binomial(n=10, p=0.3) pmf: scipy.stats.binom --
+  k        pmf
+  0     0.0282
+  1     0.1211
+  2     0.2335
+  3     0.2668
+  4     0.2001
+  5     0.1029
+  6     0.0368
+  7     0.0090
+  8     0.0014
+  9     0.0001
+ 10     0.0000
+
+-- Standard normal pdf: scipy.stats.norm --
+  x     pdf(x)
+ -2     0.0540
+ -1     0.2420
+  0     0.3989
+  1     0.2420
+  2     0.0540
+
+-- CLT prediction for Exponential(rate=1), n=30: scipy.stats.expon --
+population mean: 1.0000
+population std : 1.0000
+                                  CLT prediction
+mean of sample means                      1.0000
+std  of sample means                      0.1826

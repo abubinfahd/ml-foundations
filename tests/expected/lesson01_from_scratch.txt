@@ -1,0 +1,15 @@
+== Descriptive statistics: from scratch ==
+rows in file: 344
+
+column                  n       mean     median       std       q25       q75
+bill_length_mm        342    43.9219    44.4500    5.4596   39.2250   48.5000
+bill_depth_mm         342    17.1512    17.3000    1.9748   15.6000   18.7000
+flipper_length_mm     342   200.9152   197.0000   14.0617  190.0000  213.0000
+body_mass_g           342  4201.7544  4050.0000  801.9545 3550.0000 4750.0000
+
+Pearson r (flipper_length_mm vs body_mass_g, n=342): 0.8712
+
+mean body_mass_g by species:
+  Adelie     n=151  mean=3700.6623
+  Chinstrap  n= 68  mean=3733.0882
+  Gentoo     n=123  mean=5076.0163

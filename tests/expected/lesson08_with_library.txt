@@ -1,0 +1,17 @@
+== Ensembles: with scikit-learn ==
+rows in file: 32561
+rows after dropping '?': 30162
+features: 5 numeric + 30 one-hot = 35
+train/test split: 24129/6033 (seed 42)
+
+random forest (100 trees):
+  test accuracy:  0.8381
+hist gradient boosting:
+  test accuracy:  0.8705
+
+top-5 feature importances (random forest):
+  age                                0.2512
+  education-num                      0.1450
+  hours-per-week                     0.1221
+  capital-gain                       0.1175
+  marital-status=Married-civ-spouse  0.1082

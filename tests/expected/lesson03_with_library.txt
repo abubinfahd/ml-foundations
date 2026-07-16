@@ -1,0 +1,19 @@
+== Hypothesis testing: with scipy ==
+rows in file: 344
+
+-- Welch t-test: bill_length_mm, Adelie vs Chinstrap --
+  Adelie     n=151  mean=38.7914  std=2.6634
+  Chinstrap  n= 68  mean=48.8338  std=3.3393
+Welch t statistic: -21.8646
+Welch-Satterthwaite dof: 106.9670
+two-sided p-value: 2.9001e-41
+
+-- Chi-square test of independence: species vs island --
+observed counts:
+                 Biscoe      Dream  Torgersen
+  Adelie             44         56         52
+  Chinstrap           0         68          0
+  Gentoo            124          0          0
+chi-square statistic: 299.5503
+dof: 4
+p-value: 1.3546e-63

@@ -1,0 +1,26 @@
+== Linear regression: with scikit-learn & statsmodels ==
+rows: 1599  train: 1279  test: 320
+
+-- scikit-learn LinearRegression --
+term                        coef
+intercept                 5.6341
+fixed acidity             0.0353
+volatile acidity         -0.2046
+citric acid              -0.0522
+residual sugar            0.0222
+chlorides                -0.0916
+free sulfur dioxide       0.0364
+total sulfur dioxide     -0.1057
+density                  -0.0356
+pH                       -0.0727
+sulphates                 0.1591
+alcohol                   0.2944
+train MSE: 0.4317  train R^2: 0.3570
+test  MSE: 0.3595  test  R^2: 0.3728
+
+-- statsmodels OLS (train split) --
+R-squared: 0.3570
+feature                 coef   std err      p-value
+alcohol               0.2944    0.0324   3.7314e-19
+volatile acidity     -0.2046    0.0251   9.0296e-16
+sulphates             0.1591    0.0220   8.6946e-13

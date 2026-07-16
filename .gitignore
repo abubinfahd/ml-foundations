@@ -1,0 +1,24 @@
+# Virtual environment
+.venv/
+
+# Data and generated outputs (populated by scripts, never committed)
+data/
+outputs/
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+.ipynb_checkpoints/
+.pytest_cache/
+.claude/
+
+# Editors
+.vscode/
+.idea/
+*.swp
+
+# OS cruft
+.DS_Store
+Thumbs.db
+desktop.ini

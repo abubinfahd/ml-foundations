@@ -1,0 +1,26 @@
+== Model evaluation: from scratch ==
+rows: 891
+
+-- 5-fold cross-validation (manual folds) --
+fold 1  n=179  accuracy: 0.8045
+fold 2  n=178  accuracy: 0.8090
+fold 3  n=178  accuracy: 0.8034
+fold 4  n=178  accuracy: 0.8090
+fold 5  n=178  accuracy: 0.7472
+mean accuracy: 0.7946 +/- 0.0238
+
+-- Fixed 80/20 split (lesson 05's): train 712, test 179 --
+
+confusion matrix (rows = actual, columns = predicted):
+                    pred died  pred survived
+actual died                84             26
+actual survived            20             49
+
+accuracy : 0.7430
+precision: 0.6533
+recall   : 0.7101
+F1       : 0.6806
+
+ROC curve points (unique thresholds + origin): 169
+AUC via threshold sweep + trapezoid: 0.8234
+AUC via Mann-Whitney rank formula  : 0.8234

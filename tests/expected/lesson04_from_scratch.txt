@@ -1,0 +1,28 @@
+== Linear regression: from scratch ==
+rows: 1599  train: 1279  test: 320
+
+-- Normal equation --
+term                        coef
+intercept                 5.6341
+fixed acidity             0.0353
+volatile acidity         -0.2046
+citric acid              -0.0522
+residual sugar            0.0222
+chlorides                -0.0916
+free sulfur dioxide       0.0364
+total sulfur dioxide     -0.1057
+density                  -0.0356
+pH                       -0.0727
+sulphates                 0.1591
+alcohol                   0.2944
+train MSE: 0.4317  train R^2: 0.3570
+test  MSE: 0.3595  test  R^2: 0.3728
+
+-- Batch gradient descent (lr=0.1, 2000 iterations) --
+iter     0  train MSE: 32.4144
+iter   100  train MSE: 0.4318
+iter   500  train MSE: 0.4317
+iter  2000  train MSE: 0.4317
+train MSE: 0.4317  train R^2: 0.3570
+test  MSE: 0.3595  test  R^2: 0.3728
+max |theta_gd - theta_ne|: 9.6043e-13

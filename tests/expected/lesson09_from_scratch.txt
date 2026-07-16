@@ -1,0 +1,24 @@
+== k-means clustering (Lloyd's algorithm): from scratch ==
+rows used: 333 (rows with missing values dropped)
+features (standardized): bill_length_mm, bill_depth_mm, flipper_length_mm, body_mass_g
+
+k=3, 10 restarts (seed 42):
+best inertia: 370.7661
+iterations of best run: 10
+cluster sizes (largest first): 129, 119, 85
+
+cluster x species contingency (clusters sorted by size):
+                 Adelie  Chinstrap     Gentoo
+  cluster 1         124          5          0
+  cluster 2           0          0        119
+  cluster 3          22         63          0
+
+elbow: best inertia by k (10 restarts each):
+  k=1  inertia=1332.0000
+  k=2  inertia= 552.6710
+  k=3  inertia= 370.7661
+  k=4  inertia= 293.9048
+  k=5  inertia= 228.5065
+  k=6  inertia= 200.6772
+  k=7  inertia= 182.9965
+  k=8  inertia= 172.7676

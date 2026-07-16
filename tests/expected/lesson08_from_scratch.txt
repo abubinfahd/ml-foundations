@@ -1,0 +1,21 @@
+== Ensembles (bagging / random forest): from scratch ==
+rows in file: 32561
+rows after dropping '?': 30162
+features: 5 numeric + 30 one-hot = 35
+train/test split: 24129/6033 (seed 42)
+
+single deep tree (max_depth=None), the overfit baseline:
+  train accuracy: 0.9721
+  test accuracy:  0.8149
+
+bagging, 25 deep trees (all features):
+  test accuracy:  0.8409
+random-forest-style, 25 deep trees (sqrt(d)=5 features per tree):
+  test accuracy:  0.7471
+
+test accuracy as the ensemble grows (same fitted trees):
+  trees   bagging  rf-style
+      1    0.8107    0.7539
+      5    0.8326    0.7509
+     10    0.8386    0.7484
+     25    0.8409    0.7471
